@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<title>Слайдер</title>
+<style type="text/css">
+* {
+}
+aside {
+    width: 500px;
+    height: 330px;
+    border: 1px solid green;
+    margin: 50px auto;
+    overflow: hidden; 
+}
+#S {
+    width: 3000px;
+    height: 330px;
+    border: 1px solid black;
+    animation: movie 20s infinite;
+}
+#S img {
+    width: 500px;
+    padding:0px;
+    margin:0px;
+    vertical-align: top;
+}
+@keyframes movie {
+   from {transform: translateX(0px)}
+   10% {transform: translateX(-500px)}
+   20% {transform: translateX(-1000px)}
+   30% {transform: translateX(-1500px)}
+   40% {transform: translateX(-2000px)}
+   50% {transform: translateX(-2500px)}
+   60% {transform: translateX(-2000px)}
+   70% {transform: translateX(-1500px)}
+   80% {transform: translateX(-1000px)}
+   90% {transform: translateX(-500px)}
+   to {transform: translateX(0px)}
+}
+</style>
+</head>
+<body>
+      <aside>
+      <div id="S">
+         <img src="29008.jpg"><img src="29005.jpg"><img src="29003.jpg"><img src="29002.jpg"><img src="29001.jpg"><img src="29000.jpg">
+      </div>
+      </aside>
+</body>
+</html>
